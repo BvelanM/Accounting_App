@@ -1,0 +1,16 @@
+body{
+  background-color:#F5F5F5;
+  font-family: Arial, sans-serif;
+  display: block !important;
+  align-items: none !important;
+  justify-content: none !important;
+}
+.navbar{
+   align-items: center!important;
+}
+.pie{
+    align-items: left !important;
+    float: left !important;
+    background-color: transparent !important;
+    margin-top: 30px;
+}
