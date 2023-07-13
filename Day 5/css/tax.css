@@ -1,0 +1,8 @@
+.calc{
+ padding: 30px;
+ font-family: sans-serif;
+ & h1{
+  color:#3F2305;
+  text-shadow:2px 2px bisque;
+ }
+}

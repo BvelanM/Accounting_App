@@ -1,18 +1,19 @@
 import React from "react";
 import { Chart } from "react-google-charts";
 export const data = [
-  ["Expenses", "In Dollars"],
-  ["Employees", 78930],
-  ["Office Supplies",1000],
-  ["Production Supplies", 45000],
-  ["Transport", 34120],
-  ["Tax", 17937],
+  ["Products", "In Stock"], 
+  ["Free Space", 900],["Stationaries", 200],
+  ["Office Accessories", 400],
+  ["Duty Sheets", 150],
+  ["Electrical", 430],
+  ["Service", 337],
 ];
 
 export const options = {
   legend: "none",
   pieSliceText: "label",
-  title: "Fiscal Quarter Expenses",
+  title: "Warehouse Stock Level",
+  pieHole: 0.4,
   pieStartAngle: 100,
   slices: {
     0: { color: "#47A992" },
@@ -23,7 +24,7 @@ export const options = {
   },
 };
 
-export function Pie() {
+export function Donut() {
   return (
     <Chart
       chartType="PieChart"
@@ -34,4 +35,4 @@ export function Pie() {
     />
   );
 }
-export default Pie;
+export default Donut;

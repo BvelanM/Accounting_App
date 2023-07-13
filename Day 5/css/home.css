@@ -1,0 +1,74 @@
+body{
+  background-color:#F5F5F5;
+  font-family: Arial, sans-serif;
+  display: block !important;
+  align-items: none !important;
+  justify-content: none !important;
+}
+.navbar{
+   align-items: center!important;
+}
+.pie{
+    align-items: left !important;
+    float: left !important;
+    background-color: transparent !important;
+    margin-top: 30px;
+    margin-left: 20px;
+    box-shadow:5px 3px 10px 4px #3F2305  ;
+    outline: 3px solid #F2EAD3;
+}
+.card{
+    align-items: left !important;
+    float: left !important;
+    background-color: transparent !important;
+    margin-top: 30px;
+    margin-left: 20px;
+    box-shadow:5px 3px 10px 4px #3F2305  ;
+    outline: 3px solid #F2EAD3;
+    width: max-content;
+    & input{
+  width: 100%;
+  padding: 10px;
+  margin-left: 0;
+  margin-bottom: 15px;
+  border:1px solid #F5F5F5;
+  border-bottom: none !important;
+  border-radius: 7px;
+}
+}
+a{
+ text-decoration: none !important; 
+ color:rgb(40, 38, 38)
+}
+a:visited:hover{
+color: #F5F5F5;
+}
+.marquee-container{
+    display: flex;
+    align-items: center;
+    background: #DFD7BF;
+    overflow: hidden;
+}
+.marquee{
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding: 24px 0;
+    color: #fff;
+    white-space: nowrap;
+    animation: marquee 3.5s infinite linear; /* notice the infinite */
+}
+.marquee:after{
+    content: "LONDON - PARIS - SYDNEY - TOKYO - NEW YORK - BERLIN - ROME";
+}
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+.align{
+  margin-left: 83px;
+}

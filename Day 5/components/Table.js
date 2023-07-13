@@ -2,36 +2,92 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "firstName", headerName: "First name", width: 130 },
-  { field: "lastName", headerName: "Last name", width: 130 },
+  { field: "id", headerName: "Product ID", type: "number", width: 180 },
+  { field: "productName", headerName: "Product name", width: 130 },
+  { field: "supplier", headerName: "Supplier name", width: 130 },
+  { field: "transfer", headerName: "Transfer name", width: 130 },
   {
-    field: "age",
-    headerName: "Age",
+    field: "price",
+    headerName: "Stock price($)",
     type: "number",
-    width: 90,
+    width: 100,
   },
   {
-    field: "fullName",
-    headerName: "Full name",
+    field: "tid",
+    headerName: "Bearer",
     description: "This column has a value getter and is not sortable.",
+    type: "number",
     sortable: false,
     width: 160,
     valueGetter: (params) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+      `${params.row.supplier || ""} `,
   },
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+  {
+    id: 1,
+    productName: "12x7 Notes",
+    supplier: "Jon",
+    transfer: "Jon",
+    price: 78.12,
+  },
+  {
+    id: 2,
+    productName: "Pens",
+    supplier: "Cersei",
+    transfer: "Jon",
+    price: 300,
+  },
+  {
+    id: 3,
+    productName: "Bussiness Forms",
+    supplier: "Jaime",
+    transfer: "Jon",
+    price: 400,
+  },
+  {
+    id: 4,
+    productName: "Toner Catridges",
+    supplier: "Arya",
+    transfer: "Jon",
+    price: 879,
+  },
+  {
+    id: 5,
+    productName: "Stamp Pads",
+    supplier: "Daenerys",
+    transfer: "Jon",
+    age: null,
+  },
+  {
+    id: 6,
+    productName: "Copy paper",
+    supplier: "Hert",
+    transfer: "Jon",
+    price: 150,
+  },
+  {
+    id: 7,
+    productName: "90x3 Notes",
+    supplier: "Ferrara",
+    transfer: "Jon",
+    price: 4490,
+  },
+  {
+    id: 8,
+    productName: "Staplers",
+    supplier: "Rossini",
+    transfer: "Jon",
+    price: 1897,
+  },
+  {
+    id: 9,
+    productName: "Crox icnat",
+    supplier: "Harvey",
+    transfer: "Jon",
+    age: 65,
+  },
 ];
 
 export default function DataTable() {
